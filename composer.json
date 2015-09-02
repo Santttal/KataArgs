@@ -1,0 +1,13 @@
+{
+    "require": {
+        "phpunit/phpunit": "3.7.*",
+        "hamcrest/hamcrest-php": "dev-master"
+
+    },
+
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    }
+}
