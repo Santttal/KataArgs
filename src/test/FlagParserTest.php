@@ -51,9 +51,9 @@ class FlagParserTest extends \PHPUnit_Framework_TestCase
      */
     public function parse_GivenStringWithFlagAndParam_CreatesFlagObjectWithThatParam()
     {
-        $flags = $this->parser->parse('-f uck');
+        $flags = $this->parser->parse('-f 100');
 
-        assertThat($flags[0]->getValues(), is(equalTo(['uck'])));
+        assertThat($flags[0]->getValues(), is(equalTo(['100'])));
     }
 
     /**
